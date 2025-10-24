@@ -1,0 +1,537 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+    
+}
+html, body {
+    overflow-x: hidden;
+}
+
+:root{
+    --maincolor:white;
+    --secondcolor:black;
+    --hovercolor:rgb(170, 167, 167);
+    --activecolor:black;
+    --fontlink: "Poppins", sans-serif;
+    --h2font:"Montserrat", sans-serif;
+    --spanfont:"Lobster", cursive;
+    --shopnowcolor-BG:black;
+    --shopnowcolor-text:white;
+    
+    
+}
+
+div.Retaj .headBanner {
+    background-image: url("imgs/image/image/home-new-bg-free-img.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    margin-bottom:50px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px 0px 50px 0px;
+    
+    
+
+
+}
+
+
+div.Retaj .headBanner header{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--maincolor);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+
+}
+
+div.Retaj .headBanner header nav{
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    flex-wrap: wrap;
+}
+
+div.Retaj .headBanner header nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    font-family: var(--fontlink);
+}
+div.Retaj .headBanner header nav ul.left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left:15px;
+    position: relative;
+    top:10px
+
+
+}
+
+
+
+div.Retaj .headBanner header nav ul.right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    left: 30px;
+    top:10px;
+    
+    
+}
+
+
+div.Retaj .headBanner header nav ul.right li a{
+    color: var(--maincolor);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: normal;
+   
+}
+div.Retaj .headBanner header nav ul.left li a{
+    color: var(--maincolor);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+div.Retaj .headBanner header nav ul li a:hover{
+    color: var(--hovercolor);
+    text-decoration: underline;
+    display: inline-block;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+    
+}
+
+div.Retaj .headBanner header nav ul li a:active{
+    color: var(--activecolor);
+    transform: scale(0.9);
+}
+
+div.Retaj .headBanner header h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 0px;
+    
+}
+
+div.Retaj .headBanner section.banner{
+    
+    color: var(--maincolor);
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    top:50px;
+    left:10px;
+    font-size: 30px;
+    margin-bottom: 200px;
+    font-family:var(--h2font);
+
+
+}
+
+div.Retaj .headBanner section.banner span{
+    font-family: var(--spanfont);
+    
+}
+
+div.Retaj .headBanner section.banner button{
+    
+    padding:15px;
+    font-size: 20px;
+    background-color: var(--maincolor);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+div.Retaj .headBanner section.banner button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+div.Retaj .headBanner section.banner button.first{
+    background-color:var(--shopnowcolor-BG);
+    
+}
+
+div.Retaj .headBanner section.banner button.first a{
+    text-decoration: none;
+    color:var(--shopnowcolor-text);
+    font-weight: bold;
+
+}
+div.Retaj .headBanner section.banner button:hover{
+    background-color: var(--hovercolor);
+    transform: scale(0.9);
+    transition: all 0.4s ease-in-out;
+}
+
+div.Retaj .headBanner section.banner button:active{
+    background-color: var(--activecolor);
+   
+}
+
+
+div.Retaj div.imgs ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    position: relative;
+    top: 20px;
+    margin-bottom: 70px;
+}
+
+div.Retaj div.imgs ul li{
+    margin: 10px;
+}
+
+div.Retaj div#shopnow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width:95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 10px;  
+}
+
+div.Retaj div#shopnow section.img1,
+div.Retaj div#shopnow section.img2,
+div.Retaj div#shopnow section.img3{
+
+    background-size: cover;
+    width: 350px;
+    height:400px ;
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: all 0.35s ease-in-out;
+    margin:10px;
+    
+    
+}
+
+div.Retaj div#shopnow section.img1{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("imgs/image/image/service-1.jpg");
+
+}
+div.Retaj div#shopnow section.img2{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("imgs/image/image/service-2.jpg");
+
+}
+div.Retaj div#shopnow section.img3{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("imgs/image/image/service-3.jpg");
+}
+
+div.Retaj div#shopnow section.img1:hover,
+div.Retaj div#shopnow section.img2:hover,
+div.Retaj div#shopnow section.img3:hover{
+    transform: translate(5px,5px);
+    transition: all 0.35s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+    
+
+}
+
+div.Retaj div#shopnow section span{
+    font-family:var(--spanfont) ;
+    font-size: 20px;
+    position: relative;
+    top: 230px;
+    color: var(--maincolor);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: var(--spanfont);
+}
+
+div.Retaj div#shopnow section h5{
+    font-family:"Raleway", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    position: relative;
+    top: 250px;
+    color: var(--maincolor);
+
+    
+}
+
+div.Retaj div#shopnow section button{
+    padding:10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 270px;
+    right: 100px;
+    background-color: var(--shopnowcolor-BG);
+    color: var(--shopnowcolor-text);
+    font-weight: bold;
+}
+div.Retaj div#shopnow section button:hover{
+    background-color: var(--hovercolor);
+    transform: scale(0.9);
+    transition: all 0.4s ease-in-out;
+}
+
+
+.featured-products {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #bebdbd65;
+}
+
+.featured-products h2 {
+    font-family: var(--spanfont);
+    margin-bottom: 40px;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-2px);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #eee; 
+}
+
+.product-card h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.product-card .category {
+    color: #999;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.product-card .price {
+    font-size: 1.1em;
+}
+
+.product-card .old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 8px;
+}
+
+.product-card .new-price {
+    color: #cc0000; 
+    font-weight: bold;
+}
+
+
+.special-offer-banner {
+    padding: 80px 0;
+    background: url('imgs/image/image/banner-03.jpg') no-repeat center center; 
+    background-size: cover;
+    background-color: #bebdbd65;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    margin-bottom:50px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px 0px 50px 0px;
+}
+
+.offer-box { 
+    padding: 50px;
+    width: 50%; 
+    font-family: var(--spanfont);
+    text-align: left;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+.offer-box h4 {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.offer-box h2 {
+    font-size: 3em;
+    font-family: var(--spanfont);
+    text-decoration: none;
+    color:var(--shopnowcolor-text);
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+.offer-box p {
+    margin-bottom: 20px;
+    color: white;
+    font-family: var(--spanfont);
+}
+
+.discount-text {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 25px;
+    display: block;
+}
+.special-offer-banner .offer-box .offer-btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #000000; 
+    color: white;
+    font-weight: bold;
+    margin-top: 20px; 
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(216, 141, 29, 0.582);
+}
+
+.special-offer-banner .offer-box .offer-btn:hover {
+    background-color: #585252f3;
+    transform: scale(0.95);
+}
+
+
+
+
+
+.features {
+    padding: 50px 0;
+    background-color: #bebdbd65;
+}
+
+.features .container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 15px;
+}
+
+.feature-item i {
+    font-size: 2.5em;
+    color: black; 
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.feature-item:hover i {
+    color: #007bff; 
+}
+
+.feature-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-family: var(--spanfont);
+    font-weight: bold;
+}
+
+
+footer{
+    background-color: var(--secondcolor);
+    color: var(--maincolor);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    zoom: 0.9;
+  }
+
+  .headBanner {
+    background-size: contain;
+    background-position: center top;
+    height: 500px; 
+  }
+
+  .headBanner header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .headBanner {
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
